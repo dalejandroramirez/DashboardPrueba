@@ -86,8 +86,8 @@ with st.container():
                             x='Fecha_pedido',
                             y='Ventas',
                             title='Tendencia de Ventas')
-        line_chart.update_layout(height=600,
-                                width=1000)
+        line_chart.update_layout(height=300,
+                                width=600)
         st.plotly_chart(line_chart)
 
     with pie_chart_total:
@@ -104,8 +104,8 @@ with st.container():
         pie_chart.update_layout(uniformtext_minsize=12,
                                 uniformtext_mode='hide',
                                 showlegend=False,
-                                height=600,
-                                width=600)
+                                height=300,
+                                width=300)
         st.plotly_chart(pie_chart)
 
 # Container para nuestros dos ultimos graficos
