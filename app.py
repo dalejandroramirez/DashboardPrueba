@@ -18,7 +18,7 @@ with st.sidebar:
 
 
 superTienda_raw = pd.read_csv(
-    '/home/pc/Documentos/CodigoFacilito/Dashboard/streamlit/data/supertienda.csv')
+    'data/supertienda.csv')
 print(superTienda_raw.columns)
 
 # Quitar valores nulos
