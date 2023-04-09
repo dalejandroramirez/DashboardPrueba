@@ -125,8 +125,8 @@ with st.container():
                             color='Categoría',
                             orientation='h',
                             text_auto='.2s')
-        bar_chart.update_layout(height=600,
-                                width=600)
+        bar_chart.update_layout(height=300,
+                                width=300)
         st.plotly_chart(bar_chart)
 
     with bar_chart_total2:
@@ -139,6 +139,6 @@ with st.container():
                             title='Ventas por Sub-Categoría',
                             color='Subcategoría',
                             text_auto='.2s')
-        bar_chart2.update_layout(height=600,
-                                width=1000)
+        bar_chart2.update_layout(height=300,
+                                width=600)
         st.plotly_chart(bar_chart2)
