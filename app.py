@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px 
 from decouple import config
 
-pathdata = config('PATHDATA')
+# pathdata = config('PATHDATA')
 
 st.set_page_config(
   page_title= 'Dashboard',
@@ -18,7 +18,7 @@ with st.sidebar:
 
 
 if __name__ == '__main__':
-  superTienda_raw = pd.read_csv(pathdata+'supertienda.csv')
+  superTienda_raw = pd.read_csv('/home/pc/Documentos/CodigoFacilito/Dashboard/streamlit/data/supertienda.csv')
   print(superTienda_raw.columns)
   
   #Quitar valores nulos
